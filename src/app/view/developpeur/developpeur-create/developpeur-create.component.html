@@ -1,0 +1,15 @@
+<form>
+  <div class="form-group">
+    <label for="">Ticket Reference</label>
+    <input type="text" class="form-control" value="{{selected.ref}}" disabled id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="">Developpeur</label>
+    <select class="form-control" (change)="isSelected($event)"    pInputText >
+      <option [value]=''>---select value-----</option>
+      <option  value="en cours de traitement"> en cours de traitement</option>
+      <option  value="résolu">résolu</option>
+    </select>
+  </div>
+  <button type="submit" (click)="send()" class="btn btn-primary">Submit</button>
+</form>

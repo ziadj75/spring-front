@@ -1,0 +1,19 @@
+<form>
+  <div class="form-group">
+    <label for="">Ticket Reference</label>
+    <input type="text" class="form-control" name="ref" [(ngModel)]="fill.ref" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="">description</label>
+    <input type="text" class="form-control" name="description" [(ngModel)]="fill.description"  aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="">environement</label>
+    <input type="text" class="form-control" name="environement" [(ngModel)]="fill.environement"  aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="">urgence</label>
+    <input type="text" class="form-control" name="urgence" [(ngModel)]="fill.urgence"  aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <button type="submit" (click)="send()" class="btn btn-primary">Submit</button>
+</form>

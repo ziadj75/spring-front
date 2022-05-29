@@ -1,0 +1,25 @@
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">etatTache</th>
+    <th scope="col">description</th>
+    <th scope="col">environement</th>
+    <th scope="col">urgence</th>
+    <th scope="col">ref</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let ticket of tickets">
+    <th scope="row">{{ ticket.etatTache }}</th>
+    <td>
+      {{ ticket.description }}
+    </td>
+    <td>{{ ticket.environement}}</td>
+    <td>{{ ticket.urgence }}</td>
+    <td>{{ ticket.ref }}</td>
+
+  </tr>
+  </tbody>
+</table>
+
+

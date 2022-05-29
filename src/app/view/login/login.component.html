@@ -1,0 +1,18 @@
+<form class="text-center border border-light p-5" style="background:darkslateblue">
+  <p class="h4 mb-4" >  WELCOME  </p>
+  <!-- Email -->
+  <input type="text" id="defaultLoginFormEmail" name="login"  class="form-control mb-4" placeholder="login" [(ngModel)]="selected.login">
+  <!-- Password -->
+  <input type="password" id="defaultLoginFormPassword" name="password" class="form-control mb-4"  [(ngModel)]="selected.password" placeholder="Password">
+  <div class="d-flex justify-content-around">
+    <div>
+      <!-- Remember me -->
+    </div>
+
+  </div>
+  <!-- Sign in button -->
+  <button (click)="signIn()"  type="submit" class="btn btn-success" >Sign in</button>
+  <!-- Register -->
+
+</form>
+<!-- Default form login -->
